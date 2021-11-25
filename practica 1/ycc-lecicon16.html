@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leccion 16</title>
+    <style>
+        .estiloUno {
+            background-color: red;
+            font-size: 22px;
+            border: 1px solid black;
+        }
+
+        .estiloDos {
+            background-color: green;
+            font-size: 50px;
+            border: 1px solid yellow;
+        }
+
+        .estilosDeNoche {
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body id="cuerpo">
+    <p id="frase">
+        ...  
+    </p>
+
+    <a onclick="cambiarTexto('Pickachu')">Haz click aqui - Pikachu</a><br/>
+    <a onclick="cambiarTexto('Charizard')">Haz click aqui - Charizard</a><br/>
+    <a onclick="cambiarTexto('Bulbasaur')">Haz click aqui - Bulbasaur</a>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p id="numero">0</p>
+    <button onclick="sumarUno()"> Sumar uno </button>
+    <a style="background-color: blue;"  onmouseenter="restarUno()"> Restar uno</a>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <div id="divUno"> Etiqueta para agregar estilo</div>
+    <button onclick="agregarEstiloUno()"> Agregar Estilo Uno </button> 
+    <button onclick="agregarEstiloDos()"> Agregar Estilo Dos </button>
+    <br/>
+    <button onclick="quitarEstiloUno()"> Quitar Estilo Uno </button> 
+    <br/>
+    <button onclick="quitarEstiloDos()"> Quitar Estilo Dos </button> 
+    <br/>
+    <button onclick="estilosNoche()"> Cambiar a estilo de noche </button>  
+    <br/>
+    <button onclick="estilosDia()"> Cambiar a estilo de dia </button>
+
+
+    <script>
+        var numero = 0;
+
+        function cambiarTexto(texto){
+            document.getElementById("frase").innerHTML = texto;
+        }
+
+        function sumarUno() {
+            numero = numero + 1;
+            document.getElementById("numero").innerHTML = numero;
+        }
+
+        function restarUno() {
+            numero = numero - 1;
+            document.getElementById("numero").innerHTML = numero; 
+        }
+
+        function agregarEstiloUno(){
+            var elemento = document.getElementById("divUno");
+            elemento.classList.add("estiloUno");
+        }
+
+        function agregarEstiloDos(){
+            var elemento = document.getElementById("divUno");
+            elemento.classList.add("estiloDos");
+        }
+
+        function quitarEstiloUno(){
+            var elemento = document.getElementById("divUno");
+            elemento.classList.remove("estiloUno");
+        }
+
+        function quitarEstiloDos(){
+            var elemento = document.getElementById("divUno");
+            elemento.classList.remove("estiloDos");
+        }
+
+        function estilosNoche() {
+            var elemento = document.getElementById("cuerpo");
+            elemento.classList.add("estilosDeNoche");
+        }
+
+        function estilosDia() {
+            var elemento = document.getElementById("cuerpo");
+            elemento.classList.remove("estilosDeNoche");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+
+
+</html>
+

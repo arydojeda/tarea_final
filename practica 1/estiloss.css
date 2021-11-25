@@ -1,0 +1,50 @@
+* { color: green;
+}
+
+h3 {
+    color: red;
+}
+
+li{
+    color: blue;
+}
+
+spam,ul{
+    color: violet;
+
+}
+
+ul li {
+    color: pink
+
+}
+
+ul li div{
+    color: yellow
+}
+
+ul li spam {
+    color: brown
+}
+
+.texto_verde_lima{
+    color: lime
+}
+
+.texto_tamaño_gigante{
+    font-size: 100px
+}
+
+.articulo_de_cocina{
+    background-color: magenta;
+    border: 1px solid black;
+    box-shadow: 20px 10px 10px blue;
+}
+
+.border_rojo {
+    border: 5px solid red
+}
+
+#nintendo_switch{
+    border: 10px dotted green;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+//este es un cuclo que empieza en el 0 y termina en el 99, cuando llegue a 100 se sale
+for (var i = 0; i < 100; i++) {
+// agregue una variable n a la que sumo un 1 para que sea mayor que i, para que asi siempre sea mayor que 1 y asi sucesivamente
+   n = i + 1;
+   //aqui muestro el numero que voy a evaluar
+   console.log("evaluando el numero " + n);
+   //evaluo si es multiplo de 3 y de 5
+   if (((n % 3 ) == 0) && ((n % 5) == 0)){
+        console.log("fizzbuzz");
+    }
+    else { 
+        //si no es de tres y de 5 entonces los evaluo cada uno
+   if ((n % 3) == 0) {
+       console.log("fizz");
+    }   
+    if((n % 5) == 0){
+        console.log("buzz");
+    }    
+  }
+
+}
+
+    </script>
+
+    
+</body>
+</html>

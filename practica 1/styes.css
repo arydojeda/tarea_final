@@ -1,0 +1,45 @@
+
+            .myimage{
+                width: 200px;
+                height: 200px;
+            }
+
+            
+
+            .a:hover{
+                color: orange;
+            }
+
+            a {
+        background-color: powderblue;
+         transition: background-color .5s;
+        }
+
+        a:hover {
+         background-color: gold;
+        }
+
+        .body{
+            background-color: pink;
+        }
+
+        nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
+
+  
